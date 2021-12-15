@@ -34,7 +34,9 @@
 }
 
 @mixin title {
+  font-family: 'Tenor Sans';
   font-size: 40px;
+  font-weight: normal;
 
   @media (max-width: 991px) {
     font-size: 36px;
@@ -43,5 +45,31 @@
 
   @media (max-width: 650px) {
     margin-bottom: 30px;
+  }
+
+  span {
+    color: #ae1d37;
+  }
+}
+
+@mixin subtitle {
+  font-size: 20px;
+  
+  @media (max-width: 991px) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 650px) {
+    margin-bottom: 20px;
+  }
+}
+
+@mixin mobile-mb {
+  @media (max-width: 991px) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 650px) {
+    margin-bottom: 20px;
   }
 }

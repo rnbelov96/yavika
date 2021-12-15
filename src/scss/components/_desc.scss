@@ -74,7 +74,11 @@
     top: -287px;
     position: absolute;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1150px) {
+      top: -253px;
+    }
+
+    @media (max-width: 1024px) {
       display: none;
     }
   }

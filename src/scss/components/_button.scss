@@ -21,6 +21,14 @@
   position: relative;
   font-size: 16px;
 
+  &_goods {
+    @media (max-width: 1060px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   &:hover {
     background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
     box-shadow: 0px 2px 0px #f84727, inset 0px 15px 20px -5px #ff7d9b,

@@ -10,6 +10,59 @@
   padding-left: 20px;
   padding-right: 20px;
 
+  &_offer {
+    position: relative;
+
+    @media (max-width: 1100px) {
+      margin-top: 585px;
+    }
+
+    @media (max-width: 650px) {
+      margin-top: 316px;
+    }
+
+    .line-form__title {
+      @include max-width(700px);
+    }
+
+    &::before {
+      width: 558px;
+      height: 733px;
+      content: '';
+      background-image: url('/src/img/owner.png');
+      position: absolute;
+      z-index: -1;
+      right: -155px;
+      top: -549px;
+
+      @media (max-width: 1100px) {
+        left: 50%;
+        right: initial;
+        transform: translateX(-50%);
+      }
+
+      @media (max-width: 650px) {
+        width: 300px;
+        height: 394px;
+        @include bg;
+        background-size: contain;
+        top: -296px;
+      }
+    }
+
+    &::after {
+      content: url('/src/img/line-form-check.png');
+      z-index: 1;
+      position: absolute;
+      right: -88px;
+      top: -140px;
+
+      @media (max-width: 1100px) {
+        content: none;
+      }
+    }
+  }
+
   @media (max-width: 650px) {
     padding: 20px;
   }
@@ -105,14 +158,14 @@
 }
 
 .line-form__policy {
-  color: #ABABAB;
+  color: #ababab;
   font-size: 13px;
   margin-bottom: 0;
   text-align: center;
 
   button {
     @include reset-btn;
-    color: #ABABAB;
+    color: #ababab;
     text-decoration: underline;
   }
 

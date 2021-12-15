@@ -439,3 +439,12 @@ initSlider({
   withButtons: true,
   withNav: true,
 });
+
+initSlider({
+  imagesLength: 12,
+  isFlexible: false,
+  maxMode: 1,
+  sliderSectionName: 'slider-goods',
+  withButtons: true,
+  withNav: true,
+});

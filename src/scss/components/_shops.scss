@@ -108,6 +108,11 @@
   @include max-width(313px);
   border-right: 1px solid #f2f2f2;
 
+  @media (max-width: 1150px) {
+    background-color: white;
+    border-radius: 15px;
+  }
+
   &:last-child {
     border-right: none;
     border-top-right-radius: 15px;

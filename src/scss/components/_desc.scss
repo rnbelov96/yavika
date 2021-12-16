@@ -95,11 +95,19 @@
   padding-bottom: 20px;
   padding-left: 40px;
 
+  @media (max-width: 650px) {
+    padding-left: 20px;
+  }
+
   &:nth-child(1) {
     background-image: url('/src/img/icons/desc/1.png');
     background-repeat: no-repeat;
     background-size: 88px 67px;
     background-position: right 47px center;
+
+    @media (max-width: 650px) {
+      background-position: right 27px center;
+    }
   }
 
   &:nth-child(2) {
@@ -107,6 +115,10 @@
     background-repeat: no-repeat;
     background-size: 77px 63px;
     background-position: right 22px center;
+
+    @media (max-width: 650px) {
+      background-position: right 10px center;
+    }
   }
 
   &:nth-child(3) {
@@ -114,6 +126,10 @@
     background-repeat: no-repeat;
     background-size: 83px 51px;
     background-position: right 21px center;
+
+    @media (max-width: 650px) {
+      background-position: right 8px center;
+    }
   }
 }
 

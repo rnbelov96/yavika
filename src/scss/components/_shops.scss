@@ -92,6 +92,16 @@
   font-weight: bold;
   color: white;
   margin-bottom: 0;
+
+  &_slider {
+    color: black;
+    margin-bottom: 30px;
+    text-align: center;
+
+    @media (max-width: 650px) {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .shops__column {

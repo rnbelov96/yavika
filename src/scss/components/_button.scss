@@ -26,11 +26,9 @@
   }
 
   &_goods {
-    @media (max-width: 1060px) {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &:hover {
